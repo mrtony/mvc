@@ -28,6 +28,28 @@ console.write(Path.Combine(_sLocalPath,_sFilename))
 //output = c:\\skis\\tampcheck\\capicom.dll
 ```
 
-其他可看[範例程式]()
+其他可看[範例程式](https://github.com/mrtony/mvc/blob/master/example/%E8%A4%87%E8%A3%BD%E6%AA%94%E6%A1%88%E7%9A%84%E7%AF%84%E4%BE%8B/FileCopy.cs)
+
+
+## 建構式
+
+
+## Debug技巧
+
+可以在主控台印出log
+
+	System.Diagnostics.Debug.WriteLine
+可以用DEBUG/RELEASE來做assert
+
+	using System.Diagnostics;
+	Debug.Assert(1 == 0, "Impossible!!");
+可以用DEBUG/RELEASE來決定哪些代碼要不要編譯
+
+	#if DEBUG
+	#else
+	#endif
+
+## 參考資料
+[C#的自動屬性 get/set](http://alansong.pixnet.net/blog/post/55999534-c%23-get-set-%E5%8F%8A%E8%87%AA%E5%8B%95%E5%B1%AC%E6%80%A7)
 
 
