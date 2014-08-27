@@ -14,6 +14,25 @@ C#的設計筆記
 <a name="類別陣列"/>
 ## 類別陣列
 
+## IEnumerable介面和foreach
+可列舉並遍歷物件內容
+
+	private void ListAllElement(IEnumerable<int> elements)
+	{
+	    foreach (int element in elements)
+	    {
+	        Console.WriteLine(element);
+	    }
+	}</int>
+	
+	int[] a = { 1, 2, 3 };
+	List<int> b = new List<int> { 4, 5, 6 };
+	List<string> c = new List<string> { "email", "cellPhone1", "cellPhone2", "tel", "address"};
+	
+	ListAllElement(a);
+	ListAllElement(b);
+	ListAllElement(c);
+
 
 <a name="靜態類別與方法案"/>
 ## 靜態類別與方法
