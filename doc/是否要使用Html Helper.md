@@ -37,4 +37,8 @@ MVC-使用HTML Helper
 	}
 	</ul>
 
-確實從上面的範例來看,用helper也是很簡潔的就可以完成一個listview的顯示,而且只用了很短的程式碼,而且不需要寫javascript就可以完成. 唯一的缺點看起來就只有維護上,必需要懂helper的語法而已.
+確實從上面的範例來看,用helper也是很簡潔的就可以完成一個listview的顯示,而且只用了很短的程式碼,而且不需要寫javascript就可以完成.缺點是
+
+* 維護上必需要懂helper的語法.
+* 無法直接將view的html在別的平台上使用(非.net平台)
+
