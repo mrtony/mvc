@@ -8,8 +8,9 @@ MVC-使用HTML Helper
 1. [Why do we use HTML helper in ASP.NET MVC?](http://stackoverflow.com/questions/4681883/why-do-we-use-html-helper-in-asp-net-mvc)
 2. [ASP.NET MVC 3 and the @helper syntax within Razor](http://weblogs.asp.net/scottgu/asp-net-mvc-3-and-the-helper-syntax-within-razor)
 3. [Writing Custom HTML Helpers for ASP.NET MVC](https://www.simple-talk.com/dotnet/asp.net/writing-custom-html-helpers-for-asp.net-mvc/)
+4. [Beginner's Tutorial on HTML Helpers and Creating Custom HTML Helpers in ASP.NET MVC](http://www.codeproject.com/Articles/787320/An-Absolute-Beginners-Tutorial-on-HTML-Helpers-and)
 
-我比較喜歡第2篇所提的內容. 它舉了一些使用上的實例,比如說我們要做一個list來顯示商品,用helper語法可以使用foreach loop來逐一顯示每個產品,而不需要寫一堆ul,li.
+我比較喜歡第2篇所提的內容, 而第4篇提供了不少基本的使用範例. 第2篇舉了一些使用上的實例,比如說我們要做一個list來顯示商品,用helper語法可以使用foreach loop來逐一顯示每個產品,而不需要寫一堆ul,li.
 
 	@helper DisplayPrice(Decimal price)
 	{
@@ -41,4 +42,7 @@ MVC-使用HTML Helper
 
 * 維護上必需要懂helper的語法.
 * 無法直接將view的html在別的平台上使用(非.net平台)
+* 因為翻譯動態的HTML資料,所以會使用較多的server的資源
+
+
 
