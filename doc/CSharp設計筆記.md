@@ -11,6 +11,23 @@ C#的設計筆記
 * [PATH的使用方式](#PATH的使用方式)
 * [參考資料](#參考資料)
 
+
+
+## 使用List<T>
+
+
+## SQL回傳的DataInfo使用方式
+可使用foreach加上\[ \]運算子來存取內容
+
+	DataTable oDataTable = _oCertInfoTable.Query(sComp, sSett, sSeno);
+    if (oDataTable.Rows.Count > 0)
+    {
+        foreach (DataRow oRecord in oDataTable.Rows)
+		{
+			sXML += "Comp=\"" + oRecord["Comp"].ToString() + "\" ";
+		}
+	}
+
 <a name="類別陣列"/>
 ## 類別陣列
 
